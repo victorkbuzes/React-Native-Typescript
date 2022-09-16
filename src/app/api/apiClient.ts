@@ -11,7 +11,7 @@ export const fetchUsers = async (
     page:number,
     count: number,
     ) :Promise<NetworkResponse<User[]>> => {
-        const response = await fetch(`https://jsonplaceholder.typicode.com/posts/??page=${page}&results=${count}`,
+        const response = await fetch(`https://randomuser.me/api/?${page}&results=${count}`,
         {
 
             method: 'GET',

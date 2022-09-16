@@ -4,7 +4,7 @@ import * as apiClient from '../app/api/apiClient'
 
 export type User= {
     id: number;
-    title: string;
+    type: string;
     body: string;
     name: {
         first: string;
